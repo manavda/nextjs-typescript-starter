@@ -1,0 +1,10 @@
+services:
+  # A Docker web service
+  - type: web
+    name: folio
+    env: docker
+    repo: https://github.com/manavda/folio.git # optional
+    region: singapore # optional (defaults to oregon)
+    plan: starter # optional (defaults to starter)
+    branch: master # optional (uses repo default)
+    healthCheckPath: /
